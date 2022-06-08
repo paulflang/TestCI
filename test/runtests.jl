@@ -1,4 +1,4 @@
-using test_ci
+using TestCI
 using Test
 
 logdir = joinpath(@__DIR__, "logs")
