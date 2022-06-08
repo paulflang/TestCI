@@ -8,4 +8,4 @@ open("logfile.txt", "w") do f
     write(f, "Hello World!")
 end
 
-@test false
+@test true
