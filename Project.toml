@@ -1,0 +1,4 @@
+name = "TestCI"
+uuid = "f3abac10-c8d7-474a-a7a1-4d325e086376"
+authors = ["paulflang <paul.lang@wolfson.ox.ac.uk>"]
+version = "0.1.0"
