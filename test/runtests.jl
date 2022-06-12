@@ -4,7 +4,8 @@ using Test
 logdir = joinpath(@__DIR__, "logs")
 ispath(logdir) && rm(logdir, recursive=true)
 mkdir(logdir)
-open("logfile.txt", "w") do f
+fn = joinpath(logdir, "logfile.txt")
+open(fn, "w") do f
     write(f, "Hello World!")
 end
 
