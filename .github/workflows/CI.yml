@@ -33,7 +33,9 @@ jobs:
             ${{ runner.os }}-
       - uses: julia-actions/julia-buildpkg@v1
       - uses: julia-actions/julia-runtest@v1
+      - run: ls
+      - run: echo ls
       - uses: actions/upload-artifact@v3
         with:
           name: logs
-          path: *.txt
+          path: /*.txt
