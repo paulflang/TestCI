@@ -34,7 +34,7 @@ jobs:
       - uses: julia-actions/julia-buildpkg@v1
       - uses: julia-actions/julia-runtest@v1
       - uses: actions/upload-artifact@v3
-        if: failure()
+        if: true  # always upload artifacts
         with:
           name: logs
           path: test/logs
