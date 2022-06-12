@@ -35,7 +35,6 @@ jobs:
       - uses: julia-actions/julia-runtest@v1
       - uses: actions/upload-artifact@v3
         if: failure() || success()
-        name: mylogs${{ matrix.node-version }}
         with:
-          name: logs
+          name: logs_{{ matrix.node-version }}
           path: test/logs
